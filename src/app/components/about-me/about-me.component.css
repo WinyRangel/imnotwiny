@@ -1,0 +1,165 @@
+h2 {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2.background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+
+h2.double:before { 
+    /* this is just to undo the :before styling from above */
+    border-top: none; 
+}
+
+h2.double:after {
+    border-bottom: 1px solid blue;
+    -webkit-box-shadow: 0 1px 0 0 red;
+    -moz-box-shadow: 0 1px 0 0 red;
+    box-shadow: 0 1px 0 0 red;
+    content: "";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute;
+    top: 45%; left: 0; right: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h2.no-background {
+    position: relative;
+    overflow: hidden;
+    
+    span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        display: inline;
+        vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid red;
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+    }
+}
+
+h2.no-span {
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid green;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+}
+
+
+
+.about-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  .badge {
+    transition: all 0.2s ease;
+  }
+  .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+
+    .dot-line {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .dot-line span {
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dot-line::before,
+  .dot-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      transparent 10%, 
+      #0d6efd 10%, 
+      #0d6efd 20%,
+      transparent 20%,
+      transparent 30%,
+      #0d6efd 30%,
+      #0d6efd 40%,
+      transparent 40%,
+      transparent 50%,
+      #0d6efd 50%,
+      #0d6efd 60%,
+      transparent 60%,
+      transparent 70%,
+      #0d6efd 70%,
+      #0d6efd 80%,
+      transparent 80%,
+      transparent 90%,
+      #0d6efd 90%,
+      #0d6efd 100%);
+    z-index: 0;
+    opacity: 0;
+    animation: dotsFadeIn 1.5s ease-out forwards;
+  }
+  
+  .dot-line::before {
+    left: 0;
+    animation-delay: 0.3s;
+  }
+  
+  .dot-line::after {
+    right: 0;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes dotsFadeIn {
+    0% { opacity: 0; transform: scaleX(0); }
+    50% { opacity: 0.5; transform: scaleX(1.1); }
+    100% { opacity: 1; transform: scaleX(1); }
+  }

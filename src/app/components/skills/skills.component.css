@@ -1,0 +1,292 @@
+h2 {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2.background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+
+h2.double:before { 
+    /* this is just to undo the :before styling from above */
+    border-top: none; 
+}
+
+h2.double:after {
+    border-bottom: 1px solid blue;
+    -webkit-box-shadow: 0 1px 0 0 red;
+    -moz-box-shadow: 0 1px 0 0 red;
+    box-shadow: 0 1px 0 0 red;
+    content: "";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute;
+    top: 45%; left: 0; right: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h2.no-background {
+    position: relative;
+    overflow: hidden;
+    
+    span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        display: inline;
+        vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid red;
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+    }
+}
+
+h2.no-span {
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid green;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+}
+
+
+
+.about-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  .badge {
+    transition: all 0.2s ease;
+  }
+  .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+
+    .dot-line {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .dot-line span {
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dot-line::before,
+  .dot-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      transparent 10%, 
+      #0d6efd 10%, 
+      #0d6efd 20%,
+      transparent 20%,
+      transparent 30%,
+      #0d6efd 30%,
+      #0d6efd 40%,
+      transparent 40%,
+      transparent 50%,
+      #0d6efd 50%,
+      #0d6efd 60%,
+      transparent 60%,
+      transparent 70%,
+      #0d6efd 70%,
+      #0d6efd 80%,
+      transparent 80%,
+      transparent 90%,
+      #0d6efd 90%,
+      #0d6efd 100%);
+    z-index: 0;
+    opacity: 0;
+    animation: dotsFadeIn 1.5s ease-out forwards;
+  }
+  
+  .dot-line::before {
+    left: 0;
+    animation-delay: 0.3s;
+  }
+  
+  .dot-line::after {
+    right: 0;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes dotsFadeIn {
+    0% { opacity: 0; transform: scaleX(0); }
+    50% { opacity: 0.5; transform: scaleX(1.1); }
+    100% { opacity: 1; transform: scaleX(1); }
+  }
+
+
+  
+  .skills-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  }
+  
+  .animated-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .animated-title .title-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: rgba(13, 110, 253, 0.2);
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: titleUnderline 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes titleUnderline {
+    0% { width: 0; left: 50%; }
+    100% { width: 100%; left: 0; }
+  }
+  
+  .skill-category {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 80px;
+  }
+  
+  .skill-item:hover {
+    background: rgba(13, 110, 253, 0.05);
+    transform: scale(1.1);
+  }
+  
+  .skill-item img {
+    margin-bottom: 8px;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+  }
+  
+  .skill-item:hover img {
+    filter: grayscale(0%);
+  }
+  
+  .skill-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #495057;
+    text-align: center;
+  }
+
+  .section-header h2.dot-line {
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2.dot-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 4px;
+  width: 100%;
+  background: repeating-linear-gradient(90deg, #007bff, #007bff 10px, transparent 10px, transparent 20px);
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.skill-card img {
+  max-width: 40px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}

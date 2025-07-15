@@ -1,14 +1,57 @@
-<div class="container py-4">
-  <div class="row align-items-center">
-    <div class="col-md-4 text-center mb-3 mb-md-0">
-      <img src="./assets/me.png" class="img-fluid rounded-circle shadow" alt="Winy Daniela Manzano Rangel" style="max-width: 200px;">
+<div class="container py-5">
+  <div class="row align-items-center g-4">
+    <!-- Imagen con efecto hover y borde sutil -->
+    <div class="col-lg-4 col-md-5 text-center">
+      <div class="position-relative d-inline-block">
+        <img src="../../../assets/me.png" alt="Foto de Winy Daniela" 
+             class="img-fluid rounded-circle shadow-lg hover-scale" 
+             style="max-height: 220px; border: 4px solid rgba(13, 110, 253, 0.2);">
+        <!-- Efecto decorativo -->
+        <div class="position-absolute top-0 start-100 translate-middle">
+          <div class="bg-primary rounded-circle" style="width: 20px; height: 20px;"></div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8 text-md-start text-center">
-      <h2 class="fw-bold mb-2">Winy Daniela Manzano Rangel</h2>
-      <p class="text-muted">Estudiante de Ingeniería en Desarrollo y Gestión de Software</p>
-      <h4>Estudios</h4>
-      <h5>Universidad Tecnológica del Norte de Guanajuato</h5>
-      <li> TSU en Tecnologías de la Información Área Desarrollo de Software Multiplataforma</li>
+
+    <!-- Información con mejor jerarquía tipográfica -->
+    <div class="col-lg-8 col-md-7">
+      <div class="ps-md-4">
+        <h1 class="display-5 fw-bold mb-2 text-gradient text-primary">Winy Daniela Manzano Rangel</h1>
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3">
+          <h2 class="h5 mb-0 badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+            Desarrolladora de Software
+          </h2>
+          <!-- Elementos decorativos opcionales -->
+          <div class="d-none d-md-flex gap-2">
+            <div class="bg-primary rounded-circle" style="width: 8px; height: 8px;"></div>
+            <div class="bg-success rounded-circle" style="width: 8px; height: 8px;"></div>
+            <div class="bg-warning rounded-circle" style="width: 8px; height: 8px;"></div>
+          </div>
+        </div>
+        
+        <p class="lead fs-4 text-muted mb-4 position-relative ps-3" style="border-left: 3px solid var(--bs-primary);">
+          <i class="fas fa-quote-left text-primary opacity-25 me-2"></i>
+          Creo interfaces intuitivas que hacen que lo complejo se sienta simple.
+        </p>
+        
+        <!-- Redes sociales opcionales -->
+        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+          <a href="#" class="text-dark hover-scale" style="font-size: 1.5rem;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-dark hover-scale" style="font-size: 1.5rem;">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="text-dark hover-scale" style="font-size: 1.5rem;">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
+<app-about-me></app-about-me>
+<app-skills></app-skills>
+<app-projects></app-projects>
