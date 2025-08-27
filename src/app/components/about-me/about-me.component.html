@@ -1,134 +1,127 @@
-<section class="about-section bg-secondary">
-  <div class="container-fluid">
-
-        <!-- Contenido principal -->
-        <div class="card shadow-sm border-0 overflow-hidden">
-          <div class="card-body p-4 p-md-5">
-            <!-- Encabezado con efecto decorativo -->
-            <div class="section-header text-center mb-5 position-relative">
-            <h2 class="dot-line">
-                <span>Sobre mí</span>
-            </h2>
-            <p class="text-muted mb-0">Conoce más sobre mi trayectoria y enfoque</p>
-            </div>
-            <!-- Introducción -->
-            <div class="mb-4">
-              <p class="fs-5">
-                ¡Hola! Soy <span class="fw-bold text-primary">Winy Daniela Manzano Rangel</span>, 
-                <span class="badge bg-primary bg-opacity-10 text-primary">Ingeniera en Desarrollo y Gestión de Software</span>. 
-                Me apasiona crear soluciones digitales intuitivas y funcionales que optimicen el trabajo de las personas y mejoren su experiencia.
+<section class="about-section py-5" id="about-me" style="background: linear-gradient(to bottom, #ffffff 0%, #f8fafd 100%);">
+  <div class="container">
+    <!-- Tarjeta principal con diseño moderno -->
+    <div class="card border-0 shadow-lg" style="border-radius: 12px; overflow: hidden; 
+          background: linear-gradient(145deg, #ffffff 0%, #f5f9ff 100%);
+          border: 1px solid rgba(110, 168, 254, 0.2);">
+      <div class="card-body p-4 p-lg-5">
+        <!-- Encabezado con diseño mejorado -->
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title position-relative d-inline-block">
+            <span class="text-gradient-primary" style="font-family: 'Poppins', sans-serif; font-weight: 700; 
+                  font-size: 2.2rem; color: #031633; position: relative;">
+              Sobre mí
+              <span class="position-absolute bottom-0 start-0 w-100" 
+                    style="height: 3px; background: linear-gradient(90deg, #6ea8fe 0%, #0d6efd 100%); 
+                           border-radius: 3px; transform: scaleX(0.7);"></span>
+            </span>
+          </h2>
+          <p class="section-subtitle mt-3" style="color: #084298; font-size: 1.1rem;
+                 font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+            Conoce más sobre mi trayectoria y enfoque profesional
+          </p>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Introducción - Columna izquierda -->
+          <div class="col-lg-6">
+            <div class="intro-card p-4" style="background: rgba(158, 197, 254, 0.05); 
+                  border-radius: 10px; border-left: 4px solid #3d8bfd;
+                  box-shadow: 0 4px 12px rgba(5, 44, 101, 0.05);">
+              <p class="intro-text" style="color: #052c65; line-height: 1.7; font-size: 1.05rem;">
+                ¡Hola! Soy <span class="highlight-name" style="font-weight: 600; color: #031633;">Winy</span>, 
+                <span class="profession-badge badge py-2 px-3" 
+                      style="background: linear-gradient(135deg, #9ec5fe 0%, #6ea8fe 100%);
+                             color: #031633; font-weight: 600; border-radius: 20px;">
+                  Ingeniera en Desarrollo y Gestión de Software
+                </span>. 
+                Me apasiona crear soluciones digitales intuitivas y funcionales que optimicen procesos y mejoren la experiencia de usuario.
               </p>
-            </div>
-
-            <!-- Filosofía -->
-            <div class="mb-4 p-4 bg-light bg-opacity-5 rounded-3 border-start border-primary border-4">
-              <p class="mb-0 fst-italic">
-                "Disfruto resolver problemas complejos a través de software que automatiza tareas repetitivas y simplifica procesos. 
-                Creo firmemente que la usabilidad es clave: los sistemas deben ser claros, accesibles y fáciles de usar desde el primer momento."
-              </p>
-            </div>
-
-            <!-- Formación -->
-            <div class="bg-light bg-opacity-5 p-4 rounded-3">
-              <h4 class="h5 fw-bold mb-3 d-flex align-items-center">
-                <i class="fas fa-graduation-cap text-primary me-2"></i>
-                Formación académica
-              </h4>
-              <p class="mb-0">
-                Egresada de la <span class="fw-bold">Universidad Tecnológica del Norte de Guanajuato</span> en la carrera de Ingeniería en Desarrollo y Gestión de Software.
-                Cuento con formación como desarrolladora fullstack y experiencia en el desarrollo de aplicaciones centradas en el usuario. 
-                Me apasiona la tecnología, y siempre estoy en busca de nuevos retos y oportunidades que me permitan seguir creciendo profesionalmente
-                como desarrolladora.
+              
+              <!-- Filosofía con diseño mejorado -->
+              <div class="philosophy-card mt-4 p-4" 
+                   style="background: rgba(13, 110, 253, 0.03); border-radius: 8px;
+                          border: 1px dashed rgba(61, 139, 253, 0.3); position: relative;">
+                <i class="fas fa-quote-left" style="position: absolute; top: 15px; left: 15px; 
+                     color: #6ea8fe; opacity: 0.3; font-size: 1.8rem;"></i>
+                <p class="philosophy-text m-0" style="color: #084298; font-style: italic; 
+                       padding: 0 1.5rem; line-height: 1.7;">
+                  "Creo en el software como herramienta para simplificar la vida de las personas, priorizando siempre la usabilidad y la experiencia del usuario."
+                </p>
+                <i class="fas fa-quote-right" style="position: absolute; bottom: 15px; right: 15px; 
+                     color: #6ea8fe; opacity: 0.3; font-size: 1.8rem;"></i>
+              </div>
             </div>
           </div>
-        </div>
-    </div>
-</section>
-
-
-<!---
-            <div class="mb-4 mt-4">
-              <h4 class="h5 fw-bold mb-3 d-flex align-items-center">
-                <i class="fas fa-cog text-primary me-2"></i>
-                Tecnologías que manejo
+          
+          <!-- Formación - Columna derecha -->
+          <div class="col-lg-6">
+            <div class="education-card p-4 h-100" style="background: rgba(255, 255, 255, 0.7); 
+                  border-radius: 10px; box-shadow: 0 4px 12px rgba(5, 44, 101, 0.05);
+                  border: 1px solid rgba(110, 168, 254, 0.15);">
+              <h4 class="education-title mb-4 d-flex align-items-center">
+                <span class="title-icon me-3" style="width: 40px; height: 40px; 
+                      background: linear-gradient(135deg, #3d8bfd 0%, #0d6efd 100%);
+                      border-radius: 50%; display: flex; align-items: center; 
+                      justify-content: center;">
+                  <i class="fas fa-graduation-cap" style="color: white; font-size: 1.1rem;"></i>
+                </span>
+                <span class="text-gradient-primary" style="font-family: 'Poppins', sans-serif; 
+                      font-weight: 600; color: #031633; font-size: 1.4rem;">
+                  Formación académica
+                </span>
               </h4>
               
-              <div class="row g-3">
-                Diseño Web
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-3 shadow-sm h-100">
-                    <h5 class="h6 fw-bold text-primary mb-3">
-                      <i class="fas fa-laptop-code me-2"></i>Diseño web
-                    </h5>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Figma</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Wix</span>
-                    </div>
-                  </div>
-                </div>
-                Frontend 
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-3 shadow-sm h-100">
-                    <h5 class="h6 fw-bold text-primary mb-3">
-                      <i class="fas fa-laptop-code me-2"></i>Frontend
-                    </h5>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Angular</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">React</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Flutter</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">HTML5</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">CSS3</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">JavaScript</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Bootstrap</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Tailwind</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">JQuery</span>
-                    </div>
-                  </div>
-                </div>
-                
-                 Backend 
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-3 shadow-sm h-100">
-                    <h5 class="h6 fw-bold text-primary mb-3">
-                      <i class="fas fa-server me-2"></i>Backend
-                    </h5>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Node.js</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Express</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Flask</span>
-                    </div>
-                  </div>
-                </div>
-                
-                Bases de datos 
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-3 shadow-sm h-100">
-                    <h5 class="h6 fw-bold text-primary mb-3">
-                      <i class="fas fa-database me-2"></i>Bases de datos
-                    </h5>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary">MySQL</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">MongoDB</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">SQLite</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">SQL Server</span>
-                    </div>
-                  </div>
-                </div>
-                
-                Otras herramientas 
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-3 shadow-sm h-100">
-                    <h5 class="h6 fw-bold text-primary mb-3">
-                      <i class="fas fa-tools me-2"></i>Otras herramientas
-                    </h5>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary">APIs REST</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">MQTT</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Git</span>
-                      <span class="badge bg-primary bg-opacity-10 text-primary">Desarrollo multiplataforma</span>
-                    </div>
-                  </div>
+              <div class="education-content">
+                <p class="education-text mb-3" style="color: #052c65; line-height: 1.7;">
+                  Egresada de la <span class="highlight" style="font-weight: 600; color: #0a58ca;">
+                    Universidad Tecnológica del Norte de Guanajuato
+                  </span> en la carrera de Ingeniería en Desarrollo y Gestión de Software.
+                </p>
+                <p class="education-text" style="color: #052c65; line-height: 1.7;">
+                  Cuento con formación como desarrolladora fullstack y experiencia en el desarrollo de aplicaciones centradas en el usuario. Siempre busco nuevos retos que me permitan crecer profesionalmente.
+                </p>
+              </div>
+              
+              <!-- Habilidades destacadas con diseño mejorado -->
+              <div class="skills-section mt-4 pt-3">
+                <h5 class="skills-title mb-3" style="color: #084298; font-weight: 600; 
+                     letter-spacing: 1px; font-size: 0.9rem;">
+                  ENFOQUE PRINCIPAL
+                </h5>
+                <div class="skills-container d-flex flex-wrap gap-2">
+                  <span class="skill-badge py-2 px-3" style="background: rgba(13, 110, 253, 0.1); 
+                        color: #0a58ca; border-radius: 20px; font-weight: 500; font-size: 0.85rem;
+                        border: 1px solid rgba(13, 110, 253, 0.2);">
+                    Experiencia de Usuario
+                  </span>
+                  <span class="skill-badge py-2 px-3" style="background: rgba(61, 139, 253, 0.1); 
+                        color: #0a58ca; border-radius: 20px; font-weight: 500; font-size: 0.85rem;
+                        border: 1px solid rgba(61, 139, 253, 0.2);">
+                    Desarrollo frontend
+                  </span>
+                  <span class="skill-badge py-2 px-3" style="background: rgba(110, 168, 254, 0.1); 
+                        color: #0a58ca; border-radius: 20px; font-weight: 500; font-size: 0.85rem;
+                        border: 1px solid rgba(110, 168, 254, 0.2);">
+                    Automatización
+                  </span>
+                  <span class="skill-badge py-2 px-3" style="background: rgba(110, 168, 254, 0.1); 
+                        color: #0a58ca; border-radius: 20px; font-weight: 500; font-size: 0.85rem;
+                        border: 1px solid rgba(110, 168, 254, 0.2);">
+                    Optimización
+                  </span>
+                  <span class="skill-badge py-2 px-3" style="background: rgba(110, 168, 254, 0.1); 
+                        color: #0a58ca; border-radius: 20px; font-weight: 500; font-size: 0.85rem;
+                        border: 1px solid rgba(110, 168, 254, 0.2);">
+                    Desarrollo Web
+                  </span>
                 </div>
               </div>
             </div>
--->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

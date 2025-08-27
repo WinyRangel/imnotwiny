@@ -1,56 +1,392 @@
-<div class="card flex justify-center">
-    <p-stepper [value]="1" class="basis-[50rem]">
-        <p-step-list>
-            <p-step [value]="1">Header I</p-step>
-            <p-step [value]="2">Header II</p-step>
-            <p-step [value]="3">Header II</p-step>
-        </p-step-list>
-        <p-step-panels>
-            <p-step-panel [value]="1">
-                <ng-template #content let-activateCallback="activateCallback">
-                    <div class="flex flex-col h-48">
-                        <div
-                            class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
-                        >
-                            Content I
-                        </div>
-                    </div>
-                    <div class="flex pt-6 justify-end">
-                        <p-button label="Next" icon="pi pi-arrow-right" iconPos="right" (onClick)="activateCallback(2)" />
-                    </div>
+<section id="projects" class="contact-section">
+    <!-- Encabezado de sección mejorado -->
+    <div class="section-header text-center mb-5">
+      <h2 class="section-title position-relative d-inline-block" 
+          style="font-family: 'Poppins', sans-serif; font-weight: 700; 
+                 font-size: 2.2rem; color: #031633;">
+        <span class="text-gradient-primary">Proyectos</span>
+        <span class="position-absolute bottom-0 start-0 w-100" 
+              style="height: 3px; background: linear-gradient(90deg, #6ea8fe 0%, #0d6efd 100%); 
+                     border-radius: 3px; transform: scaleX(0.5);"></span>
+      </h2>
+      <p class="section-subtitle mt-3" style="color: #084298; font-size: 1.1rem;
+             font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">
+        Proyectos que me han ayudado a reforzar mi conocimiento
+      </p>
+    </div>
+    <!---CARDS-->
+    <div class="projects-card">
+        <p-tabs scrollable>
+            <p-tablist class="custom-tablist">
+                <ng-template #previcon>
+                    <i class="pi pi-chevron-left nav-icon"></i>
                 </ng-template>
-            </p-step-panel>
 
-            <p-step-panel [value]="2">
-                <ng-template #content let-activateCallback="activateCallback">
-                    <div class="flex flex-col h-48">
-                        <div
-                            class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
-                        >
-                            Content II
+                <p-tab value="0" class="project-tab">
+                    <div class="tab-header">
+                        <div class="tech-stack">
+                            <i class="fa-solid fa-leaf tech-icon" style="--icon-color: #12781e;"></i>
+                            <i class="fa-brands fa-angular tech-icon" style="--icon-color: #d80e0e;"></i>
+                            <i class="fa-brands fa-node tech-icon" style="--icon-color: #000000;"></i>
                         </div>
+                        <span class="project-name">Sistema Supervisión de Operaciones</span>
                     </div>
-                    <div class="flex pt-6 justify-between">
-                        <p-button label="Back" severity="secondary" icon="pi pi-arrow-left" (onClick)="activateCallback(1)" />
-                        <p-button label="Next" icon="pi pi-arrow-right" iconPos="right" (onClick)="activateCallback(3)" />
-                    </div>
-                </ng-template>
-            </p-step-panel>
+                </p-tab>
 
-            <p-step-panel [value]="3">
-                <ng-template #content let-activateCallback="activateCallback">
-                    <div class="flex flex-col h-48">
-                        <div
-                            class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex justify-center items-center font-medium"
-                        >
-                            Content III
+                <p-tab value="1" class="project-tab">
+                    <div class="tab-header">
+                        <div class="tech-stack">
+                            <i class="fa-solid fa-leaf tech-icon" style="--icon-color: #12781e;"></i>
+                            <i class="fa-brands fa-node tech-icon" style="--icon-color: #000000;"></i>
+                            <i class="fa-brands fa-angular tech-icon" style="--icon-color: #d80e0e;"></i>
+                        </div>
+                        <span class="project-name">Sitio Web para Empresa Financiera</span>
+                    </div>
+                </p-tab>  
+
+                <p-tab value="2" class="project-tab">
+                        <div class="tab-header">
+                            <div class="tech-stack">
+                                <i class="fa-brands fa-angular tech-icon" style="--icon-color: #d80e0e;"></i>
+                                <i class="fa-solid fa-database tech-icon" style="--icon-color: #478bff;"></i>
+                                <i class="fa-brands fa-node tech-icon" style="--icon-color: #000000;"></i>
+                                <i class="fa-brands fa-aws tech-icon" style="--icon-color: #FF9900;"></i>
+                            </div>
+                            <span class="project-name">Poritta Coffee</span>
+                        </div>
+                </p-tab>
+                
+                <p-tab value="3" class="project-tab">
+                    <div class="tab-header">
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-flutter tech-icon" style="--icon-color: #74C0FC;"></i>
+                            <i class="fa-solid fa-fire tech-icon" style="--icon-color: #ffae00;"></i>
+                        </div>
+                        <span class="project-name">Poritta Coffee App</span>
+                    </div>
+                </p-tab>
+
+                <p-tab value="4" class="project-tab">
+                    <div class="tab-header">
+                        <div class="tech-stack">
+`                            <i class="fa-brands fa-unity tech-icon" style="--icon-color: #000000;"></i>
+                        </div>
+                        <span class="project-name">Sushi Cat - Videojuego</span>
+                    </div>
+                </p-tab>
+
+
+                <p-tab value="5" class="project-tab">
+                    <div class="tab-header">
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-react tech-icon" style="--icon-color: #57ddff;"></i>
+                            <i class="fa-solid fa-database tech-icon" style="--icon-color: #478bff;"></i>
+                        </div>
+                        <span class="project-name">DresShop - CRUD</span>
+                    </div>
+                </p-tab>
+                
+                <ng-template #nexticon>
+                    <i class="pi pi-chevron-right nav-icon"></i>
+                </ng-template>
+            </p-tablist>
+            <p-tabpanels class="custom-tabpanels">
+                <p-tabpanel value="0" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">Sistema Web Operaciones - MEAN Stack Application <p class="text-secondary">Proyecto profesional</p></h4>
+                        <p class="project-description">
+                            Desarrollé una solución integral para automatizar los procesos del área operativa de la empresa, utilizando el stack MEAN (MongoDB, Express, Angular, Node.js).
+                            Mi contribución principal incluyó:
+
+                            Implementación de módulos de gestión de agendas para supervisores, con visualización dinámica y filtros personalizados.
+
+                            Desarrollo de herramientas para el seguimiento de indicadores de productividad, con generación automática de reportes mensuales.
+
+                            Creación de funcionalidades para la gestión y conciliación de pagos, incluyendo validación y registro de reportes enviados por asesores.
+
+                            Integración con MongoDB para consultas eficientes y almacenamiento estructurado de información operativa.
+
+                            Diseño de componentes reutilizables en Angular, optimizados para rendimiento y experiencia de usuario.
+
+                            Esta solución permitió reducir significativamente los tiempos de procesamiento manual y mejoró la trazabilidad de los procesos internos.
+
+                            Contexto y transformación digital
+                            Antes de la implementación, la gestión de agendas se realizaba de forma manual, en agendas físicas, que posteriormente eran transcritas a archivos de Excel.
+                            Cada archivo contenía una hoja por coordinador, y semanalmente era necesario generar nuevos documentos (por ejemplo: AGENDA SEM 10, AGENDA SEM 11), vaciarlos y llenarlos con nuevas actividades. El proceso abarcaba 6 días por semana, con 9 actividades diarias por coordinador, incluyendo el cálculo manual del gasto de gasolina.
+
+                            A fin de mes, el encargado debía consolidar la información de las 4 semanas para generar reportes con actividades, códigos, horas reportadas y no reportadas, lo que generaba una elevada carga de trabajo.
+
+                            Solución implementada
+                            Con el sistema desarrollado:
+
+                            Se creó un módulo de agendas digitales, permitiendo que los coordinadores registren directamente sus actividades desde el sistema, eliminando el uso de papel y hojas de cálculo.
+
+                            Se incorporó un sistema de roles y permisos:
+
+                            Coordinadores: acceso restringido al registro y consulta de sus propias agendas.
+
+                            Supervisores: acceso total al sistema y visualización de todas las agendas registradas.
+
+                            Se automatizó el cálculo de métricas operativas, como gasto de gasolina y horas trabajadas/no trabajadas.
+
+                            Se centralizó la información, facilitando la generación de reportes mensuales con solo unos clics.
+
+                            Esta transformación eliminó procesos redundantes, redujo errores humanos y aumentó considerablemente la eficiencia operativa, proporcionando una plataforma moderna, escalable y accesible para el equipo operativo.
+
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/1.png" alt="sistema-operaciones iniciar-sesion">
+                            </div>
+                            <div id="slide-2" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/2.png" alt="sistema-operaciones inicio">
+                            </div>
+                            <div id="slide-3" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/3.png" alt="sistema-operaciones registrar-agendas">
+                            </div>
+                            <div id="slide-4" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/4.png" alt="sistema-operaciones agendas-productividad">
+                            </div>
+                            <div id="slide-5" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/5.png" alt="sistema-operaciones agendas-graficas">
+                            </div>
+                            <div id="slide-6" class="slide">
+                                <img src="../../../assets/proyectos/sistema-operaciones/6.png" alt="sistema-operaciones agendas-vouchers">
+                            </div>
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+                            <a href="#slide-2" class="slider-dot"></a>
+                            <a href="#slide-3" class="slider-dot"></a>
+                            <a href="#slide-4" class="slider-dot"></a>
+                            <a href="#slide-5" class="slider-dot"></a>
+                            <a href="#slide-6" class="slider-dot"></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/demo-operaciones.git">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
                         </div>
                     </div>
-                    <div class="flex pt-6 justify-start">
-                        <p-button label="Back" icon="pi pi-arrow-left" iconPos="right" (onClick)="activateCallback(2)" />
+                </p-tabpanel>
+                <p-tabpanel value="1" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">Sitio Web Oficial <p class="text-secondary">Sitio creado para una empresa financiera</p></h4>
+                        <p class="project-description">
+                            Sitio web oficial para una empresa del sector financiero, en este proyecto pude mejorar mis habilidades de diseño
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/vam-web-site/1.png" alt="web site screenshot">
+                            </div>
+                            <div id="slide-2" class="slide">
+                                <img src="../../../assets/proyectos/vam-web-site/2.png" alt="web site screenshot">
+                            </div>
+                            <div id="slide-3" class="slide">
+                                <img src="../../../assets/proyectos/vam-web-site/3.png" alt="web site screenshot">
+                            </div>
+                            <div id="slide-4" class="slide">
+                                <img src="../../../assets/proyectos/vam-web-site/4.png" alt="web site screenshot">
+                            </div>
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+                            <a href="#slide-2" class="slider-dot"></a>
+                            <a href="#slide-3" class="slider-dot"></a>
+                            <a href="#slide-4" class="slider-dot"></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/sistema-restaurante.git">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
+                            <a class="demo-link" target="_blank" href="#">
+                                <i class="pi pi-external-link"></i> Ver demo
+                            </a>
+                        </div>
                     </div>
-                </ng-template>
-            </p-step-panel>
-        </p-step-panels>
-    </p-stepper>
-</div>
+                </p-tabpanel>  
+                <p-tabpanel value="2" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">Poritta Coffee - E-commerce <p class="text-secondary">Proyecto escolar</p></h4>
+                        <p class="project-description">
+                            Sitio web de comercio electrónico desarrollado con Angular en el frontend y Node.js + Express.js en el backend, utilizando MySQL como sistema de gestión de base de datos.
+                            Se integró la API de PayPal para el procesamiento seguro de pagos en línea y se utilizó AWS para el despliegue completo del sistema, garantizando escalabilidad y alto rendimiento mediante el uso de EC2 (cliente y servidor) y RDS (base de datos).
+                            Participé activamente en la implementación del módulo de registro e inicio de sesión de usuarios, así como en la sección de administración, agregando funcionalidades para gestionar alimentos y bebidas (agregar y eliminar productos). También colaboré en el proceso de despliegue y configuración en AWS, asegurando una arquitectura estable y eficiente.
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-web/sesion.png" alt="Actunity screenshot">
+                            </div>
+                            <div id="slide-2" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-web/porita-web.png" alt="Registro screenshot">
+                            </div>
+                            <div id="slide-3" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-web/detalles.png" alt="Recuperación screenshot">
+                            </div>
+                            <div id="slide-4" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-web/carrito.png" alt="Actunity screenshot">
+                            </div>
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+                            <a href="#slide-2" class="slider-dot"></a>
+                            <a href="#slide-3" class="slider-dot"></a>
+                            <a href="#slide-4" class="slider-dot"></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/sistema-restaurante.git">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
+                            <a class="demo-link" target="_blank" href="#">
+                                <i class="pi pi-external-link"></i> Ver demo
+                            </a>
+                        </div>
+                    </div>
+                </p-tabpanel>  
+                <p-tabpanel value="3" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">Poritta Coffee - Mobile App <p class="text-secondary">Proyecto escolar</p></h4>
+                        <p class="project-description">
+                            Aplicación móvil desarrollada con Flutter, diseñada para mejorar la experiencia de los clientes en restaurantes. Utiliza Firebase como servicio backend, implementando autenticación de usuarios y base de datos en tiempo real para gestionar pedidos de forma rápida y eficiente.
+                            La app incluye funcionalidades como:
+                            <br>
+                            - Menú digital interactivo
+                            <br>
+                            - Carrito de compras
+                            <br>
+                            Participé en el diseño y desarrollo de la interfaz de usuario, asegurando una experiencia intuitiva, fluida y centrada en la usabilidad. Se priorizó la accesibilidad y facilidad de navegación para adaptarse a usuarios de distintos perfiles
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-app/iniciar-sesion.jpg" alt="Actunity screenshot">
+                            </div>
+                            <div id="slide-2" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-app/bebidas.jpg" alt="Recuperación screenshot">
+                            </div>
+                            <div id="slide-3" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-app/platillos.jpg" alt="Actunity screenshot">
+                            </div>
+                            <div id="slide-4" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-app/pagos.jpg" alt="Actunity screenshot">
+                            </div>
+                            <div id="slide-5" class="slide">
+                                <img src="../../../assets/proyectos/porita-coffe-app/recibo.jpg" alt="Actunity screenshot">
+                            </div>
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+                            <a href="#slide-2" class="slider-dot"></a>
+                            <a href="#slide-3" class="slider-dot"></a>
+                            <a href="#slide-4" class="slider-dot"></a>
+                            <a href="#slide-5" class="slider-dot"></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/app_coffe.git">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
+                            <a class="demo-link" target="_blank" href="#">
+                                <i class="pi pi-external-link"></i> Ver demo
+                            </a>
+                        </div>
+                    </div>
+                </p-tabpanel>
+                <p-tabpanel value="4" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">Sushi Cat - Videojuego <p class="text-secondary">Proyecto escolar</p> </h4>
+                        <p class="project-description">
+                            Videojuego desarrollado con el motor Unity, utilizando C# para implementar la lógica del juego, incluyendo control de niveles, movimiento del personaje, sistema de daño, salud y otras mecánicas interactivas.
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/sushi-cat/juego-inicio.png" alt="Sushi Cat Screenshot">
+                            </div>
+                            <div id="slide-2" class="slide">
+                                <img src="../../../assets/proyectos/sushi-cat/personaje.png" alt="Sushi Cat screenshot">
+                            </div>
+                            <div id="slide-3" class="slide">
+                                <img src="../../../assets/proyectos/sushi-cat/personaje2.png" alt="Sushi Cat screenshot">
+                            </div>
+                            <div id="slide-4" class="slide">
+                                <img src="../../../assets/proyectos/sushi-cat/nivel.png" alt="Sushi Cat screenshot">
+                            </div>
+                            <div id="slide-5" class="slide">
+                                <img src="../../../assets/proyectos/sushi-cat/inicio-partida.png" alt="Sushi Cat screenshot">
+                            </div>
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+                            <a href="#slide-2" class="slider-dot"></a>
+                            <a href="#slide-3" class="slider-dot"></a>
+                            <a href="#slide-4" class="slider-dot"></a>
+                            <a href="#slide-5" class="slider-dot"></a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/Videogame.git">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
+                            <a class="demo-link" target="_blank" href="https://winyrangel.itch.io/sushi-cat">
+                                <i class="pi pi-external-link"></i> Ver demo
+                            </a>
+                        </div>
+                    </div>
+                </p-tabpanel>
+                <p-tabpanel value="5" class="project-panel">
+                    <div class="panel-content">
+                        <h4 class="project-title">DresShop - CRUD <p class="text-secondary">Proyecto practico</p> </h4>
+                        <p class="project-description">
+                            CRUD funcional desarrollado con React, Node.js y MySQL, enfocado en la gestión y visualización de datos mediante una interfaz web sencilla.
+                        </p>
+                        <div class="slider-container">
+                        <div class="slider">
+                            <div class="slides">
+                            <div id="slide-1" class="slide">
+                                <img src="../../../assets/proyectos/dresshop/dresshop.png" alt="Actunity screenshot">
+                            </div>
+
+                            </div>
+                            
+                            <div class="slider-nav">
+                            <a href="#slide-1" class="slider-dot"></a>
+
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="github-link" target="_blank" href="https://github.com/WinyRangel/CRUD-REACT-MYSQL#">
+                                <i class="pi pi-github"></i> Ver código en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </p-tabpanel>
+            </p-tabpanels>
+        </p-tabs>
+    </div>
+</section>
+

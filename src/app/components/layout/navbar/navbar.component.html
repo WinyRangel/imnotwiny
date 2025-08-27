@@ -1,23 +1,43 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="../../../../assets/logo-white.png" height="50" width="50" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<p-menubar [model]="items" [class.scrolled]="scrolled" class="fade-in">
+  <ng-template pTemplate="start">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="50" height="50">
+      <defs>
+        <!-- Gradiente para dark/light mode -->
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#4f8df7"/>
+          <stop offset="100%" stop-color="#6b9dfd"/>
+        </linearGradient>
+        <style>
+          .bg { fill: none; stroke: url(#grad); stroke-width: 2; }
+          .text { 
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: 700; 
+            text-anchor: middle; 
+            fill: url(#grad);
+          }
+          .glow {
+            filter: drop-shadow(0 0 8px rgba(79,141,247,0.8));
+          }
+        </style>
+      </defs>
+
+      <!-- Marcos en perspectiva -->
+      <rect class="bg" x="30" y="30" width="240" height="240"/>
+      <rect class="bg" x="60" y="60" width="180" height="180"/>
+      <rect class="bg" x="90" y="90" width="120" height="120"/>
+
+      <!-- Texto central -->
+      <text x="150" y="145" font-size="60" class="text glow">W</text>
+      <text x="150" y="190" font-size="28" class="text">.DEV</text>
+    </svg>
+
+  </ng-template>
+
+  <!-- Botón de idioma -->
+  <button type="button" class="btn" (click)="toggleLang()">
+    <img [src]="flags[currentLang]" 
+         [alt]="currentLang === 'es' ? 'idioma-español' : 'language-english'" 
+         width="40" height="40">
+  </button>
+
+</p-menubar>
