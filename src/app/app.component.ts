@@ -15,15 +15,7 @@ export class AppComponent {
   constructor(private primeng: PrimeNG) {}
 
   ngOnInit() {
-    this.primeng.ripple.set(true);
-    const loader = document.getElementById('loader');
-    if (loader) {
-      loader.classList.add('loader-hidden');
-
-      loader.addEventListener('transitionend', () => {
-        loader.remove();
-      });
-    }
+      this.primeng.ripple.set(true);
   }
   title = 'my-portfolio';
 }

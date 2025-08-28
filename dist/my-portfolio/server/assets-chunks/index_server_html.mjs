@@ -18,7 +18,7 @@ export default `<!doctype html>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<link rel="stylesheet" href="/my-portfolio/styles-KCT7EVVP.css"></head>
+<link rel="stylesheet" href="styles-KCT7EVVP.css"></head>
 <body><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
 </script>
         <!-- Loader
@@ -315,6 +315,6 @@ export default `<!doctype html>
             }, 300);
         });
     </script> -->
-<link rel="modulepreload" href="/my-portfolio/chunk-EZWUQBM2.js"><script src="/my-portfolio/polyfills-B6TNHZQ6.js" type="module"></script><script src="/my-portfolio/main-SLGTQDRC.js" type="module"></script></body>
+<link rel="modulepreload" href="chunk-EZWUQBM2.js"><script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-UBA6EGKV.js" type="module"></script></body>
 </html>
 `;
