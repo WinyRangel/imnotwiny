@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en" data-beasties-container="">
+<head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta charset="utf-8">
+  <title>Winy</title>
+  <base href="/my-portfolio/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+
+  <!-- Fonts -->
+  <style>@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');unicode-range:U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;}@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v23/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<style>:root{--color-white:#ffffff;--color-light-blue-1:#9ec5fe;--color-light-blue-2:#6ea8fe;--color-blue-1:#3d8bfd;--color-blue-2:#0d6efd;--color-dark-blue-1:#0a58ca;--color-dark-blue-2:#084298;--color-dark-blue-3:#052c65;--color-dark-blue-4:#031633}body{font-family:Montserrat,sans-serif;color:var(--color-dark-blue-3)}</style><link rel="stylesheet" href="/my-portfolio/styles-KCT7EVVP.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/my-portfolio/styles-KCT7EVVP.css"></noscript></head>
+<body ngcm="">
+        <!-- Loader
+    <div id="loader">
+        <div class="loader-logo">
+            <div class="loader-logo-inner">WD</div>
+        </div>
+        <div class="loader-text">Cargando Portfolio...</div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="loader-dots">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+    </div> -->
+  <app-root></app-root>
+
+  <!-- Bootstrap Bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let currentSlide = 1;
+      const totalSlides = 6;
+
+      function navigateSlider(direction, event) {
+        if (event) event.preventDefault();
+        currentSlide += direction;
+
+        if (currentSlide > totalSlides) currentSlide = 1;
+        if (currentSlide < 1) currentSlide = totalSlides;
+
+        document.querySelector(`#slide-${currentSlide}`).scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }
+
+      const projectCard = document.querySelector('.project-card-3d');
+      const projectItems = document.querySelectorAll('.project-item');
+      const backButton = document.querySelector('.back-button');
+
+      const projectsData = [
+        {
+          id: 0,
+          name: "Actunity",
+          type: "Proyecto escolar",
+          description: "Aplicación fullstack basada en MEAN (MongoDB, Express.js, Angular, Node.js)...",
+          tech: ["mongodb", "express", "angular", "nodejs"],
+          images: ["actunity.png", "registro.png", "recuperacion.png"],
+          github: "https://github.com/WinyRangel/1---copia.git",
+          demo: "https://actunitycode.web.app/"
+        }
+        // Se pueden añadir más proyectos
+      ];
+
+      function createParticles() {
+        const particlesContainer = document.createElement('div');
+        particlesContainer.className = 'particles';
+        document.querySelector('.card-front').appendChild(particlesContainer);
+
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+
+          const size = Math.random() * 10 + 5;
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.left = `${Math.random() * 100}%`;
+          particle.style.top = `${Math.random() * 100}%`;
+          particle.style.animationDelay = `${Math.random() * 15}s`;
+          particle.style.opacity = Math.random() * 0.5 + 0.1;
+
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      function setupSlider() {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlideIndex = 0;
+
+        function showSlide(n) {
+          slides.forEach(slide => slide.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+
+          currentSlideIndex = (n + slides.length) % slides.length;
+          slides[currentSlideIndex].classList.add('active');
+          dots[currentSlideIndex].classList.add('active');
+        }
+
+        dots.forEach(dot => {
+          dot.addEventListener('click', function () {
+            showSlide(parseInt(this.getAttribute('data-slide')));
+          });
+        });
+
+        setInterval(() => {
+          showSlide(currentSlideIndex + 1);
+        }, 5000);
+      }
+
+      function loadProjectDetails(projectId) {
+        const project = projectsData.find(p => p.id == projectId);
+        if (!project) return;
+
+        document.querySelector('.project-title').innerHTML = `
+          ${project.name} <span class="project-tag">${project.type}</span>
+        `;
+
+        document.querySelector('.project-description').textContent = project.description;
+
+        const techStack = document.querySelector('.project-tech-stack');
+        techStack.innerHTML = project.tech.map(tech => `
+          <img src="assets/icons/${tech}.png" alt="${tech}">
+        `).join('');
+
+        const slider = document.querySelector('.media-slider');
+        slider.innerHTML = `
+          <div class="slider-container">
+            ${project.images.map((img, i) => `
+              <div class="slide ${i === 0 ? 'active' : ''}">
+                <img src="assets/${img}" alt="${project.name} screenshot ${i + 1}">
+              </div>
+            `).join('')}
+          </div>
+          <div class="slider-nav">
+            ${project.images.map((_, i) => `
+              <span class="slider-dot ${i === 0 ? 'active' : ''}" data-slide="${i}"></span>
+            `).join('')}
+          </div>
+        `;
+
+        setupSlider();
+      }
+
+      createParticles();
+
+      projectItems.forEach(item => {
+        item.addEventListener('click', function () {
+          const projectId = this.getAttribute('data-project');
+          loadProjectDetails(projectId);
+          projectCard.classList.add('flipped');
+        });
+      });
+
+      backButton.addEventListener('click', () => {
+        projectCard.classList.remove('flipped');
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleSwitch = document.getElementById('switch');
+      const body = document.body;
+      const statusText = document.querySelector('.status-text');
+      const starsContainer = document.getElementById('stars');
+      const cloudsContainer = document.getElementById('clouds');
+
+      // Estrellas
+      for (let i = 0; i < 20; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        const size = Math.random() * 2 + 1;
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.opacity = Math.random() * 0.5 + 0.5;
+        starsContainer.appendChild(star);
+      }
+
+      // Nubes
+      for (let i = 0; i < 5; i++) {
+        const cloud = document.createElement('div');
+        cloud.classList.add('cloud');
+        cloud.style.width = `${Math.random() * 10 + 10}px`;
+        cloud.style.height = `${Math.random() * 6 + 6}px`;
+        cloud.style.left = `${Math.random() * 100}%`;
+        cloud.style.top = `${Math.random() * 100}%`;
+        cloud.style.opacity = Math.random() * 0.3 + 0.3;
+        cloudsContainer.appendChild(cloud);
+      }
+
+      toggleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          body.classList.add('night-mode');
+          statusText.textContent = 'Modo Día';
+        } else {
+          body.classList.remove('night-mode');
+          statusText.textContent = 'Modo Noche';
+        }
+      });
+    });
+  </script>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('formSuccess');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validación simple (puedes expandirla según necesites)
+                let isValid = true;
+                const inputs = form.querySelectorAll('input[required], textarea[required]');
+                
+                inputs.forEach(input => {
+                    const errorMessage = input.parentElement.querySelector('.error-message');
+                    
+                    if (!input.value.trim()) {
+                        errorMessage.textContent = 'Este campo es obligatorio';
+                        errorMessage.style.display = 'block';
+                        isValid = false;
+                    } else if (input.type === 'email' && !isValidEmail(input.value)) {
+                        errorMessage.textContent = 'Por favor ingresa un email válido';
+                        errorMessage.style.display = 'block';
+                        isValid = false;
+                    } else {
+                        errorMessage.style.display = 'none';
+                    }
+                });
+                
+                if (isValid) {
+                    // Simulación de envío exitoso
+                    form.reset();
+                    successMessage.style.display = 'flex';
+                    
+                    // Ocultar mensaje después de 5 segundos
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                }
+            });
+            
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            // Mejorar la experiencia de los campos con placeholder flotante
+            const floatLabels = document.querySelectorAll('.floating-label input, .floating-label textarea');
+            
+            floatLabels.forEach(input => {
+                // Comprobar si hay valor al cargar la página (útil al recargar)
+                if (input.value) {
+                    input.classList.add('has-value');
+                }
+                
+                input.addEventListener('blur', () => {
+                    if (input.value) {
+                        input.classList.add('has-value');
+                    } else {
+                        input.classList.remove('has-value');
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- <script>
+        // Simular la carga de la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            const progressBar = document.getElementById('progress-bar');
+            const content = document.querySelector('app-root');
+            
+            // Simular progreso de carga
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    
+                    // Completar la carga
+                    setTimeout(() => {
+                        loader.classList.add('loader-hidden');
+                        content.style.display = 'block';
+                        
+                        // Eliminar el loader del DOM después de la transición
+                        loader.addEventListener('transitionend', () => {
+                            loader.remove();
+                        });
+                    }, 500);
+                }
+                
+                progressBar.style.width = progress + '%';
+            }, 300);
+        });
+    </script> -->
+<link rel="modulepreload" href="/my-portfolio/chunk-EZWUQBM2.js"><script src="/my-portfolio/polyfills-B6TNHZQ6.js" type="module"></script><script src="/my-portfolio/main-SLGTQDRC.js" type="module"></script></body>
+</html>
