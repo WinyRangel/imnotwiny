@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Winy</title>
-  <base href="/">
+  <base href="/my-portfolio/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
@@ -25,7 +25,7 @@
         crossorigin="anonymous">
 </head>
 <body>
-        <!-- Loader -->
+        <!-- Loader
     <div id="loader">
         <div class="loader-logo">
             <div class="loader-logo-inner">WD</div>
@@ -39,7 +39,7 @@
             <div class="loader-dot"></div>
             <div class="loader-dot"></div>
         </div>
-    </div>
+    </div> -->
   <app-root></app-root>
 
   <!-- Bootstrap Bundle (incluye Popper) -->
@@ -290,12 +290,12 @@
         });
     </script>
     
-    <script>
+    <!-- <script>
         // Simular la carga de la página
         document.addEventListener('DOMContentLoaded', function() {
             const loader = document.getElementById('loader');
             const progressBar = document.getElementById('progress-bar');
-            const content = document.querySelector('.container');
+            const content = document.querySelector('app-root');
             
             // Simular progreso de carga
             let progress = 0;
@@ -320,6 +320,6 @@
                 progressBar.style.width = progress + '%';
             }, 300);
         });
-    </script>
+    </script> -->
 </body>
 </html>
