@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <meta charset="utf-8">
   <title>Winy</title>
-  <base href="/my-portfolio/">
+  <base href="/imnotwiny/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
@@ -314,6 +314,6 @@ export default `<!doctype html>
             }, 300);
         });
     </script> -->
-<link rel="modulepreload" href="chunk-EZWUQBM2.js"><script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-UBA6EGKV.js" type="module"></script></body>
+<link rel="modulepreload" href="chunk-EZWUQBM2.js"><script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-S6SPX6P2.js" type="module"></script></body>
 </html>
 `;

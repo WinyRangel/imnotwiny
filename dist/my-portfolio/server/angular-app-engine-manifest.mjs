@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/my-portfolio',
+  basePath: '/imnotwiny',
   supportedLocales: {
   "en-US": ""
 },
